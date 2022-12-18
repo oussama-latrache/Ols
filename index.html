@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/avatrico.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <title>Document</title>
 </head>
 
@@ -167,11 +170,16 @@
     <div class="home" id=home>
         <div class="container">
             <div class="text">
-                <h1>Hy , I’m Oussama </h1>
+                <h1 class="ml11">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Hy , I’m Oussama </span>
+                    </span>
+                </h1>
                 <p>i’m an notion expert , i can help you to organise and manage your life using notion <br> <br> I share
                     my knowledge about notion and my templates to help you do more </p>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-left" data-aos-duration="2000">
                 <svg width="350" height="390" viewBox="0 0 284 327" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M52.1598 278.257C53.9232 264.182 61.7193 240.503 66.4527 234.131C71.6501 227.189 73.7847 225.002 91.1402 219.011C92.0683 214.256 95.5023 202.273 99.586 197.233C105.804 187.628 122.789 185.441 127.893 186.582C127.893 186.582 155.365 176.692 187.013 176.692C197.037 178.974 208.638 183.634 214.949 193.429C219.219 199.896 214.393 201.988 216.527 207.884C217.084 209.406 230.077 217.014 235.368 221.578C237.781 223.575 240.472 228.615 242.328 235.177C246.041 248.586 242.05 267.13 246.691 283.297C255.6 314.489 273.698 323.809 273.698 323.809H33.8762C34.0618 323.714 48.3546 307.927 52.1598 278.257Z"
@@ -277,7 +285,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <div class="colab">
             <p>Platform , i use to create notion templates</p>
             <div class="images">
@@ -333,7 +341,7 @@
         </div>
     </div>
 
-    <div class="aboutus" id=epc>
+    <div class="aboutus" id=epc data-aos="fade-up">
         <div class="main-title">
             <h1>Why chose Us?</h1>
         </div>
@@ -348,7 +356,7 @@
                 <br>
                 <p>💨 You can start with no experience</p>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-left" data-aos-duration="2000">
                 <img src="img/rock.png" alt="">
             </div>
         </div>
@@ -358,7 +366,7 @@
         <h1>Tempalates</h1>
     </div>
 
-    <div class="template" id=templates>
+    <div class="template" id=templates data-aos="fade-up">
         <div class="nav">
             <div class="selecting">
                 <div class="top">
@@ -646,6 +654,26 @@
 
     </div>
 
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
 
     <!-- btn up -->
     <div class="topbtn">
@@ -653,10 +681,14 @@
     </div>
 
     <!-- cursor -->
-    <div class="cursor"></div>
-    <div class="cursor2"></div>
+    <!-- <div class="cursor"></div>
+    <div class="cursor2"></div> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/all.min.js"></script>
     <script src="js/tilts.js"></script>
     <script src="index.js"></script>
