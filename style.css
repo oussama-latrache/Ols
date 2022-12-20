@@ -74,6 +74,12 @@ body {
   color: black;
   font-size: 18px;
 }
+.header .container ul.list li .port h1 {
+  font-size: 18px;
+  background: -webkit-linear-gradient(45deg, #FF006B, #682cd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .header .container ul.list li :hover {
   color: rgb(39, 39, 145);
   font-weight: bold;
@@ -82,6 +88,13 @@ body {
 .header .container .menu {
   display: none;
   cursor: pointer;
+}
+
+.port h1 {
+  font-size: 18px;
+  background: -webkit-linear-gradient(45deg, #FF006B, #682cd6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -123,7 +136,7 @@ nav .close {
   transition: 0.5s;
 }
 
-nav a {
+nav a, .port h1 {
   font-size: 20px;
   color: white;
   text-decoration: none;
