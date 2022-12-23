@@ -114,6 +114,7 @@ body {
         }
     }
 }
+
 .port h1 {
     font-size: 18px;
     background: -webkit-linear-gradient(45deg, #FF006B, #682cd6);
@@ -162,7 +163,8 @@ nav .close {
     transition: .5s;
 }
 
-nav a , .port h1  {
+nav a,
+.port h1 {
     font-size: 20px;
     color: $white;
     text-decoration: none;
@@ -370,7 +372,7 @@ nav a:hover {
 
 .template {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 
     .container {
         display: flex;
@@ -622,14 +624,14 @@ nav a:hover {
     }
 
     .container {
-        margin-top: 50px;
+        // margin-top: 50px;
         // margin-bottom: 100px;
         text-align: center;
 
         h1 {
             font-family: 'Bubblegum Sans', cursive;
             font-size: 55px;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
 
         .icons {
@@ -637,13 +639,13 @@ nav a:hover {
             justify-content: center;
             text-align: center;
             align-items: center;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
 
             .insta,
             .face,
             .twitter,
             .drible {
-                margin-left: 10px;
+                margin-left: 20px;
                 // width:40px;
                 // height:40px;
             }
@@ -655,8 +657,8 @@ nav a:hover {
 
         p {
             font-size: 16px;
-            padding-top: 50px;
-            padding-bottom: 5px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
 
@@ -732,4 +734,251 @@ nav a:hover {
     pointer-events: none;
     z-index: 99999999;
     /* so that it stays on top of all other elements */
+}
+
+// mouse scrool animation
+.mouse_scroll {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+
+.m_scroll_arrows {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+
+    border-right: 2px solid #6c1cdd;
+    border-bottom: 2px solid #2759ce;
+    margin: 0 0 3px 4px;
+
+    width: 16px;
+    height: 16px;
+}
+
+
+.unu {
+    margin-top: 1px;
+}
+
+.unu,
+.doi,
+.trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+
+}
+
+.unu {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -webkit-animation-direction: alternate;
+
+    animation-direction: alternate;
+    animation-delay: alternate;
+}
+
+.doi {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+
+    animation-delay: .2s;
+    animation-direction: alternate;
+
+    margin-top: -6px;
+}
+
+.trei {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -webkit-animation-direction: alternate;
+
+    animation-delay: .3s;
+    animation-direction: alternate;
+
+
+    margin-top: -6px;
+}
+
+.mouse {
+    height: 42px;
+    width: 24px;
+    border-radius: 14px;
+    transform: none;
+    border: 2px solid #000000;
+    top: 170px;
+}
+
+.wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #000000;
+    position: relative;
+    height: 4px;
+    width: 4px;
+    border: 2px solid #212121;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.wheel {
+    -webkit-animation: l-wheel 0.6s linear infinite;
+    -moz-animation: mouse-wheel 0.6s linear infinite;
+    animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@-moz-keyframes mouse-wheel {
+    0% {
+        top: 1px;
+    }
+
+    25% {
+        top: 2px;
+    }
+
+    50% {
+        top: 3px;
+    }
+
+    75% {
+        top: 2px;
+    }
+
+    100% {
+        top: 1px;
+    }
+}
+
+@-o-keyframes mouse-wheel {
+
+    0% {
+        top: 1px;
+    }
+
+    25% {
+        top: 2px;
+    }
+
+    50% {
+        top: 3px;
+    }
+
+    75% {
+        top: 2px;
+    }
+
+    100% {
+        top: 1px;
+    }
+}
+
+@keyframes mouse-wheel {
+
+    0% {
+        top: 1px;
+    }
+
+    25% {
+        top: 2px;
+    }
+
+    50% {
+        top: 3px;
+    }
+
+    75% {
+        top: 2px;
+    }
+
+    100% {
+        top: 1px;
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mouse-scroll {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
