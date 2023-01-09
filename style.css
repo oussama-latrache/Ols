@@ -170,7 +170,7 @@ nav a:hover {
 .home .container .text p {
   margin-top: 20px;
   font-size: 20px;
-  width:400px;
+  width: 400px;
   line-height: 30px;
   color: rgb(42, 42, 42);
 }
@@ -218,10 +218,12 @@ nav a:hover {
     align-items: center;
   }
   .home .container .text h1 {
+    padding-left: 10px;
     font-size: 45px;
   }
   .home .container .text p {
     font-size: 18px;
+    padding-left: 10px;
   }
   .home .container .image img {
     max-width: 90%;
@@ -696,5 +698,3 @@ nav a:hover {
   }
   100% {
     opacity: 1;
-  }
-}/*# sourceMappingURL=style.css.map */
