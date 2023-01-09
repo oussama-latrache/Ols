@@ -195,7 +195,7 @@ nav a:hover {
 
         .text {
             h1 {
-                font-size: 74px;
+                font-size: 64px;
                 font-family: 'Bubblegum Sans', cursive;
             }
 
@@ -203,7 +203,7 @@ nav a:hover {
                 margin-top: 20px;
                 font-size: 20px;
                 // font-weight: lighter;
-                width: 370px;
+                width: 400px;
                 line-height: 30px;
                 color: rgb(42, 42, 42);
             }
@@ -258,11 +258,13 @@ nav a:hover {
     }
 
     .home .container .text h1 {
+        padding-left: 10px;
         font-size: 45px;
     }
 
     .home .container .text p {
         font-size: 18px;
+        padding-left: 10px;
     }
 
     .home .container .image img {
