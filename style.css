@@ -164,13 +164,13 @@ nav a:hover {
   justify-content: space-between;
 }
 .home .container .text h1 {
-  font-size: 74px;
+  font-size: 64px;
   font-family: "Bubblegum Sans", cursive;
 }
 .home .container .text p {
   margin-top: 20px;
   font-size: 20px;
-  width: 370px;
+  width:400px;
   line-height: 30px;
   color: rgb(42, 42, 42);
 }
