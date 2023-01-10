@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Mitr&family=Public+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;400;500&display=swap');
 //font-family: 'Bubblegum Sans', cursive;
 // font-family: 'Mitr', sans-serif;
 // font-family: 'Public Sans', sans-serif; 
@@ -7,7 +8,8 @@
 $white : white;
 $black: black;
 $gray : gray;
-
+$main-font : 'Spline Sans Mono',
+monospace;
 
 * {
     margin: 0;
@@ -196,7 +198,7 @@ nav a:hover {
         .text {
             h1 {
                 font-size: 64px;
-                font-family: 'Bubblegum Sans', cursive;
+                font-family: $main-font;
             }
 
             p {
@@ -304,6 +306,9 @@ nav a:hover {
 }
 
 // main title
+.main-title{
+    font-family:$main-font;
+}
 .main-title template {
     padding-bottom: 70px;
 }
@@ -312,7 +317,6 @@ nav a:hover {
     color: $black;
     font-size: 60px;
     text-align: center;
-    font-family: 'Bubblegum Sans', cursive;
     padding-top: 70px;
 }
 
@@ -631,8 +635,8 @@ nav a:hover {
         text-align: center;
 
         h1 {
-            font-family: 'Bubblegum Sans', cursive;
-            font-size: 55px;
+            font-family: $main-font;
+            font-size: 35px;
             padding-bottom: 30px;
         }
 
